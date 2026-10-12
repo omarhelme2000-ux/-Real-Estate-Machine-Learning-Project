@@ -55,23 +55,32 @@ Models will be selected based on the dataset and experimental results.
 - Random Forest Regressor
 - Gradient Boosting Regressor
 
-## 📈 Model Evaluation
+## 📊 Model Evaluation
 
-The models will be evaluated using:
+The regression models were evaluated using the following metrics:
 
-- **MAE:** Mean Absolute Error
-- **RMSE:** Root Mean Squared Error
-- **R² Score:** Coefficient of Determination
+- **MAE (Mean Absolute Error):** Measures the average absolute prediction error.
+- **RMSE (Root Mean Squared Error):** Penalizes larger prediction errors.
+- **R² Score:** Measures how well the model explains the variance in house prices.
 
-The best-performing model will be selected based on validation results and the project's evaluation criteria.
+### Regression Results
 
 | Model | MAE | RMSE | R² Score |
 |---|---:|---:|---:|
-| Linear Regression | TBD | TBD | TBD |
-| Random Forest | TBD | TBD | TBD |
-| Gradient Boosting | TBD | TBD | TBD |
+| Linear Regression | 127,532.89 | 212,495.83 | 0.7013 |
+| Random Forest Regressor | 72,596.54 | 146,488.41 | 0.8581 |
 
-*Replace TBD with actual measured results.*
+### 🏆 Best Performing Model
+
+**Random Forest Regressor** achieved the best performance
+among the evaluated regression models.
+
+- **MAE:** 72,596.54
+- **RMSE:** 146,488.41
+- **R² Score:** 0.8581
+
+It achieved lower prediction errors and a higher R² score
+than Linear Regression on the test set.
 
 ## 🚀 Getting Started
 
